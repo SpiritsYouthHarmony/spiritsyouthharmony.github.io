@@ -10,9 +10,9 @@ redirect_from:
 
 {% include base_path %}
 
-<p style="text-align:justify; text-justify:inter-ideograph;">I'm a fourth year undergraduate student from [School of Information and Communication Engineering](https://sice.bupt.edu.cn/), [Beijing University of Posts and Telecommunications](https://www.bupt.edu.cn/).
+<p style="text-align:justify; text-justify:inter-ideograph;">I'm a fourth year undergraduate student from <a href="https://sice.bupt.edu.cn/" target="_blank">School of Information and Communication Engineering</a>, <a href="https://sice.bupt.edu.cn/" target="_blank">Beijing University of Posts and Telecommunications(https://www.bupt.edu.cn/)</a>.
 </p>
-<p style="text-align:justify; text-justify:inter-ideograph;">Incoming Phd Student, supervised by <a href="http://staff.ustc.edu.cn/~zhwg/index.html" title="Wengang Zhou" target="_blank">Prof. Junge ZHANG</a>
+<p style="text-align:justify; text-justify:inter-ideograph;">Incoming Phd Student, supervised by <a href="http://staff.ustc.edu.cn/~zhwg/index.html" target="_blank">Prof. Junge ZHANG</a>
 , CASIA
 
 </p>
