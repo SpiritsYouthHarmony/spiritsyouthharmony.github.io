@@ -20,5 +20,5 @@ redirect_from:
 
 <p style="text-align:justify; text-justify:inter-ideograph;">Contact me through these below.</p>
 
-[[Wechat](/images/wechat.jpg)] [<a href="mailto:yonghao@bupt.edu.cn" title="publications">email</a>]
+[[Wechat](/images/Wechat.jpg)] [<a href="mailto:yonghao@bupt.edu.cn" title="publications">email</a>]
 
