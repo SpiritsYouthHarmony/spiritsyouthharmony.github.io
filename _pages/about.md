@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: <center><a href="https://spiritsyouthharmony.github.io/" title="Yonghao SHENG">SHENG Yonghao</a></center>
 excerpt: "About me"
 author_profile: true
 redirect_from: 
