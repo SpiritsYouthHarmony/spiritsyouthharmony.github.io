@@ -4,7 +4,7 @@ collection:
 category: 
 permalink: 
 excerpt: ''
-date: 
+date: 2010-01-10
 venue: ''
 slidesurl: ''
 paperurl: ''
