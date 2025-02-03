@@ -413,8 +413,6 @@ main {
 .contact-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
-  word-break: break-word;
-  overflow-wrap: break-word;
 }
 
 .contact-title {
@@ -425,11 +423,9 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
+  /* color: var(--white-2); */
+  color: rgb(147, 236, 200);
   font-size: var(--fs-7);
-  word-break: break-word;
-  overflow-wrap: break-word;
-  white-space: normal; 
 }
 
 .contact-info address { font-style: normal; }
