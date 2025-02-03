@@ -424,7 +424,7 @@ main {
 
 .contact-info :is(.contact-link, time, address) {
   /* color: var(--white-2); */
-  color: rgb(147, 236, 200);
+  color: rgb(150, 250, 200);
   font-size: var(--fs-7);
 }
 
@@ -1843,7 +1843,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
-  .info-content .title { margin: auto; }
+  .info-content .title { color: rgb(150, 250, 200); margin: auto; }
 
   .info_more-btn { display: none; }
 
