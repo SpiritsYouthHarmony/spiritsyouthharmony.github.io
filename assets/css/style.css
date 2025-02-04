@@ -424,7 +424,7 @@ main {
 
 .contact-info :is(.contact-link, time, address) {
   /* color: var(--white-2); */
-  color: rgb(150, 250, 200);
+  color: rgb(242, 185, 88);
   font-size: var(--fs-7);
 }
 
@@ -513,7 +513,7 @@ main {
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service { margin-bottom: 20px; }
 
 .service-title { margin-bottom: 20px; }
 
@@ -526,7 +526,7 @@ main {
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 20px;
+  padding: 10px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
@@ -1727,7 +1727,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* service */
 
   .service-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px 25px;
   }
 
@@ -1843,7 +1843,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
-  .info-content .title { color: rgb(150, 250, 200); margin: auto; }
+  .info-content .title { color: rgb(242, 185, 88); margin: auto; }
 
   .info_more-btn { display: none; }
 
