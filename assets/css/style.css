@@ -424,7 +424,7 @@ main {
 
 .contact-info :is(.contact-link, time, address) {
   /* color: var(--white-2); */
-  color: rgb(242, 185, 88);
+  color: rgb(253, 206, 104);
   font-size: var(--fs-7);
 }
 
@@ -1065,7 +1065,42 @@ main {
   font-weight: var(--fw-300);
 }
 
-
+.media-list {
+  display: none;
+  margin-top: 20px;
+}
+.media-list.active {
+  display: block;
+}
+.media-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.media-image {
+  width: 320px;
+  max-width: 40%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.media-text {
+  flex: 1;
+  color: var(--light-gray-70);
+}
+.media-text .h4 {
+  margin: 0 0 8px;
+}
+@media (max-width: 768px) {
+  .media-row {
+    flex-direction: column;
+  }
+  .media-image {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 
 
 

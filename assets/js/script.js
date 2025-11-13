@@ -82,16 +82,38 @@ const filterFunc = function (selectedValue) {
   // 统一归一化
   const value = String(selectedValue).trim().toLowerCase();
 
-  const introElement = document.getElementById("portfolio-intro");
-  if (introElement) {
-    // 仅当回到 WangPing colliery ruins 时显示介绍，否则隐藏
-    introElement.style.display = (value === "wangping colliery ruins") ? "" : "none";
+  // 控制不同分类介绍文字的显示
+  const introWangping = document.getElementById("intro-wangping");
+  const introBupt = document.getElementById("intro-bupt");
+  const introYanqi = document.getElementById("intro-yanqi");
+  const introMuseums = document.getElementById("intro-museums");
+  
+  // 隐藏所有介绍文字
+  if (introWangping) introWangping.style.display = "none";
+  if (introBupt) introBupt.style.display = "none";
+  if (introYanqi) introYanqi.style.display = "none";
+  if (introMuseums) introMuseums.style.display = "none";
+  
+  // 根据选择的分类显示对应介绍文字
+  switch(value) {
+    case "wangping colliery ruins":
+      if (introWangping) introWangping.style.display = "block";
+      break;
+    case "bupt":
+      if (introBupt) introBupt.style.display = "block";
+      break;
+    case "yanqi lake":
+      if (introYanqi) introYanqi.style.display = "block";
+      break;
+    case "museums":
+      if (introMuseums) introMuseums.style.display = "block";
+      break;
   }
 
   for (let i = 0; i < filterItems.length; i++) {
     const itemCategory = (filterItems[i].dataset.category || "").trim().toLowerCase();
 
-    if (value === "wangping colliery ruins" || value === itemCategory) {
+    if (value === itemCategory) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
