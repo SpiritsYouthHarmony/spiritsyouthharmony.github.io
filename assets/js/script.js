@@ -58,7 +58,7 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -77,21 +77,26 @@ for (let i = 0; i < selectItems.length; i++) {
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
-
 const filterFunc = function (selectedValue) {
 
-  for (let i = 0; i < filterItems.length; i++) {
+  // 统一归一化
+  const value = String(selectedValue).trim().toLowerCase();
 
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+  const introElement = document.getElementById("portfolio-intro");
+  if (introElement) {
+    // 仅当回到 WangPing colliery ruins 时显示介绍，否则隐藏
+    introElement.style.display = (value === "wangping colliery ruins") ? "" : "none";
+  }
+
+  for (let i = 0; i < filterItems.length; i++) {
+    const itemCategory = (filterItems[i].dataset.category || "").trim().toLowerCase();
+
+    if (value === "wangping colliery ruins" || value === itemCategory) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
     }
-
   }
-
 }
 
 // add event in all filter button items for large screen
