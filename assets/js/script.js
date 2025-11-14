@@ -86,13 +86,13 @@ const filterFunc = function (selectedValue) {
   const introWangping = document.getElementById("intro-wangping");
   const introBupt = document.getElementById("intro-bupt");
   const introYanqi = document.getElementById("intro-yanqi");
-  const introMuseums = document.getElementById("intro-museums");
+  const introTravel  = document.getElementById("intro-travel");
   
   // 隐藏所有介绍文字
   if (introWangping) introWangping.style.display = "none";
   if (introBupt) introBupt.style.display = "none";
   if (introYanqi) introYanqi.style.display = "none";
-  if (introMuseums) introMuseums.style.display = "none";
+  if (introTravel) introTravel.style.display = "none";
   
   // 根据选择的分类显示对应介绍文字
   switch(value) {
@@ -105,8 +105,8 @@ const filterFunc = function (selectedValue) {
     case "yanqi lake":
       if (introYanqi) introYanqi.style.display = "block";
       break;
-    case "museums":
-      if (introMuseums) introMuseums.style.display = "block";
+    case "travel":
+      if (introTravel) introTravel.style.display = "block";
       break;
   }
 
