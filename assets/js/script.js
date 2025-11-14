@@ -171,14 +171,25 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
+    for (let j = 0; j < pages.length; j++) {
+      let pageName = pages[j].dataset.page;
+      // 如果点击的是Photography，则匹配portfolio页面
+      if (this.innerHTML.toLowerCase() === "photography") {
+        if (pageName === "portfolio") {
+          pages[j].classList.add("active");
+          navigationLinks[i].classList.add("active");
+          window.scrollTo(0, 0);
+        } else {
+          pages[j].classList.remove("active");
+          navigationLinks[j].classList.remove("active");
+        }
+      } else if (this.innerHTML.toLowerCase() === pageName) {
+        pages[j].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[j].classList.remove("active");
+        navigationLinks[j].classList.remove("active");
       }
     }
 
